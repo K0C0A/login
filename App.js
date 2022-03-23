@@ -3,6 +3,7 @@
 
 import './App.css';
 import React, {useState} from "react";
+import logo from './res/LPLogo.jpg';
 
 function App() {
 
@@ -56,6 +57,7 @@ function App() {
         </menu>
       </header>
       <main>
+        <img id="logo" src={logo} alt=""/>
         <form>
           <label>
               <p>Username:</p> <br/>
@@ -85,7 +87,6 @@ function App() {
           <p>Don't have an account?</p> <button id="create">Get Started</button>
         </div>
         <footer>
-
         </footer>
       </main>
     </div>
