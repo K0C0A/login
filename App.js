@@ -21,6 +21,7 @@ function App() {
     });
   }
 
+  //when checkbox is checked it will show the password
   function showPassword(){
     var x = document.getElementById("password");
     if(x.type === "password"){
@@ -33,6 +34,7 @@ function App() {
   //checks if the input boxes has at least something in them before you can submit login attempt
   function validateForm(){return state.uname.length > 0 && state.password.length > 0}
 
+  //hides / shows menubar then button is pressed
   function openMenu(){
     document.getElementById("open").style.display = "none";
     document.getElementById("menubar").style.display = "block";
