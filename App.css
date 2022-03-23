@@ -82,7 +82,7 @@ input[type=checkbox]{
   display:none;
   padding:0.5%;
   margin:0%;
-  width:18%;
+  width:12%;
   background-color:#363636;
 }
 
@@ -114,7 +114,7 @@ menu{
 #noAccount p, #noAccount button{
   display: inline-block;
 }
-/*logo*/
+/*Logo*/
 #logo{
   border-style:ridge;
   border-color: #666;
