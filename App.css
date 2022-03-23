@@ -1,6 +1,18 @@
 body{
-  margin:8%;
-  background-color: #ffffff;
+  background-color: #292929;
+}
+
+/*Form*/
+
+form{
+  margin-top: 8%;
+  margin-left:8%;
+  color:white;
+  padding: 10px;
+  background-color: rgb(120, 119, 182);
+  width: 50%;
+  border-radius: 25px;
+  font-family: 'Helvetica';
 }
 
 /*Input Boxes*/
@@ -11,23 +23,11 @@ input[type=text], input[type=password]{
   box-sizing: border-box;
   border:2px solid rgb(1, 1, 104);
   border-radius: 2px;
-}
-
-/*Form*/
-
-form{
-  color:white;
-  padding: 10px;
-  background-color: rgb(120, 119, 182);
-  width: 50%;
-  border-radius: 25px;
   font-family: 'Helvetica';
 }
 
 /*Button*/
-
-form button{
-  margin-left: 76.47%;
+button{
   background-color: white;
   border-radius: 10px;
   color: rgb(0, 0, 0);
@@ -39,6 +39,10 @@ form button{
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
     box-shadow: 0 5px #999;
+}
+
+form button{
+  float:right;
 }
 
 form button:disabled{
@@ -69,6 +73,44 @@ input[type=checkbox]{
   Border-radius: 0.15em;
 }
 
-input[type=checkbox], button{
+input[type=checkbox]{
+  display: inline-block;
+}
+
+/*Menu Bar*/
+#menubar{
+  display:none;
+  padding:0.5%;
+  margin:0%;
+  width:18%;
+  background-color:#363636;
+}
+
+#open{
+  transition-duration:0.3s ;
+  margin:0.5%;
+}
+
+#menubar button{
+  margin:0.5%;
+}
+
+menu{
+  border-bottom-right-radius: 25px;
+  border-bottom-style: solid;
+  border-right-style: solid;
+}
+
+/*Create Account*/
+
+#noAccount{
+  margin-left:8%;
+}
+
+#noAccount p{
+  color:white;
+}
+
+#noAccount p, #noAccount button{
   display: inline-block;
 }
