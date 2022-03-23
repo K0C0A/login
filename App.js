@@ -29,11 +29,30 @@ function App() {
     }
   }
 
+  //checks if the input boxes has at least something in them before you can submit login attempt
+  function validateForm(){return state.uname.length > 0 && state.password.length > 0}
+
+  function openMenu(){
+    document.getElementById("open").style.display = "none";
+    document.getElementById("menubar").style.display = "block";
+  }
+
+  function closeMenu(){
+    document.getElementById("open").style.display = "block";
+    document.getElementById("menubar").style.display = "none";
+  }
+
+  function aboutUs(){
+    window.location.href = "https://pythialegal.com/about-us-1";
+  }
   return (
     <div className="App">
       <header>
-        <menu>
-
+        <button id = "open" onClick={openMenu}>Open</button>
+        <menu id = "menubar">
+            <button id="create">Create Account</button>
+            <button id = "aboutUs"onClick={aboutUs}>About Us</button>
+            <button id="close" onClick={closeMenu}>Close</button>
         </menu>
       </header>
       <main>
@@ -60,8 +79,14 @@ function App() {
           </label>
 <br/>          
           <p id = "checkbox">Show Password</p><input id = "checkbox" type = "checkbox" onClick={showPassword}/>
-          <button>Login</button>
+          <button size ="lg" type ="submit" disabled = {!validateForm()}>Login</button>
         </form>   
+        <div id="noAccount">
+          <p>Don't have an account?</p> <button id="create">Get Started</button>
+        </div>
+        <footer>
+
+        </footer>
       </main>
     </div>
   );
