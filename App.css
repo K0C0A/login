@@ -10,7 +10,7 @@ form{
   color:white;
   padding: 10px;
   background-color: rgb(120, 119, 182);
-  width: 50%;
+  width: 45%;
   border-radius: 25px;
   font-family: 'Helvetica';
 }
@@ -113,4 +113,14 @@ menu{
 
 #noAccount p, #noAccount button{
   display: inline-block;
+}
+/*logo*/
+#logo{
+  border-style:ridge;
+  border-color: #666;
+  border-radius: 50px;
+
+  margin-right: 8%;
+  float:right;
+  width:35%;
 }
