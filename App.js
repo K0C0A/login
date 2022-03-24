@@ -1,10 +1,13 @@
 //Author: Christopher Balsillie
 //Legal Pythia Login Page Project
 
+
+//imports
 import './App.css';
 import React, {useState} from "react";
 import logo from './res/LPLogo.jpg';
 
+//app
 function App() {
 
   //Sets up username and password vars
